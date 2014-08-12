@@ -10,8 +10,8 @@ Test cases:
 *)
 fun is_older(date1: int*int*int, date2: int*int*int) = 
     let
-	val date1_val = ((#1 date1) * 1000) + ((#2 date1) * 100) + (#3 date1)
-	val date2_val = ((#1 date2) * 1000) + ((#2 date2) * 100) + (#3 date2)
+	val date1_val = ((#1 date1) * 10000) + ((#2 date1) * 100) + (#3 date1)
+	val date2_val = ((#1 date2) * 10000) + ((#2 date2) * 100) + (#3 date2)
     in
 	date1_val < date2_val
     end
